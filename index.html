@@ -23,6 +23,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("HkksSdb54Ii9h9ti_");
+  })();
+</script>
 </head>
 
 <body>
@@ -623,7 +632,7 @@
       <article class="portfolio" data-page="portfolio">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Projects</h2>
         </header>
 
         <section class="projects">
@@ -634,8 +643,20 @@
               <button class="active" data-filter-btn>All</button>
             </li>
 
-            <li class="filter-item">
+            <!-- <li class="filter-item">
               <button data-filter-btn>Web design</button>
+            </li> -->
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Machine Learning</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Python Project</button>
             </li>
 
             <li class="filter-item">
@@ -643,7 +664,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Extensions</button>
             </li>
 
           </ul>
@@ -666,16 +687,29 @@
                 <button data-select-item>All</button>
               </li>
 
-              <li class="select-item">
+              <!-- <li class="select-item">
                 <button data-select-item>Web design</button>
+              </li> -->
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
               </li>
+
+              <li class="select-item">
+                <button data-select-item>Machine Learning</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Python Project</button>
+              </li>
+
 
               <li class="select-item">
                 <button data-select-item>Applications</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Extensions</button>
               </li>
 
             </ul>
@@ -685,55 +719,107 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a href="https://main.daq8kzkn55nlw.amplifyapp.com">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/project-1.png" alt="finance" loading="lazy">
+
                 </figure>
-
-                <h3 class="project-title">Finance</h3>
-
+                <h3 class="project-title">Job Search Platform(glassdoor)</h3>
                 <p class="project-category">Web development</p>
-
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a href="https://main.d2souv5ujr35jj.amplifyapp.com">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/proj_2.webp" alt="orizon" loading="lazy">
+
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
-
+                <h3 class="project-title">Text Editing System</h3>
                 <p class="project-category">Web development</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/saransathish/nature_scence_classification">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/naturalcls.jpg" alt="orizon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">Natural Scence Classification</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/saransathish/perrin_sales_forecasting">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/forecast.jpg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Perrin Sales Forecasting</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="extensions">
+              <a href="https://github.com/saransathish/Chrome-Extension">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/linkedinpro.jpg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Linkedin Profile Changer</h3>
+
+                <p class="project-category">Chrome Extensions</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="python project">
+              <a href="https://github.com/saransathish/taskManaging?tab=readme-ov-file">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/taskpro.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Management</h3>
+
+                <p class="project-category">Python Project</p>
 
               </a>
             </li>
@@ -756,38 +842,147 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/saransathish/Captcha-Code-Recognizer">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <img src="./assets/images/captchareg.jpeg" alt="dsm." loading="lazy">
                 </figure>
 
-                <h3 class="project-title">DSM.</h3>
+                <h3 class="project-title">CAPTCHA Code Recognizer</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Machine Learning</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="python project">
+              <a href="https://github.com/saransathish/support_ticket_management">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                  <img src="./assets/images/supportticket.jpg" alt="metaspark" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">MetaSpark</h3>
+                <h3 class="project-title">Support Ticket Management</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Python Project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="python project">
+              <a href="https://github.com/saransathish/Maze_Solving">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/mazesolver.jpg" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Automated Maze Solver</h3>
+
+                <p class="project-category">Python Project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="python project">
+              <a href="https://saransathish.shinyapps.io/WorldWar_Analysis-Rshiny/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/worldwar.jpg" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">World War Analysis</h3>
+
+                <p class="project-category">Python Project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/saransathish/textSummarizer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/textsumm.jpg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">youtube Comments Summarizer</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://huggingface.co/spaces/SARAN-V/SIHapeechtotext">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/speechreg.jpg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Speech Recognizer</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/saransathish/chatbot">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/chatbot.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ChatBot</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://scecret-keeper.onrender.com">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sceretkeeper.jpg" alt="orizon" loading="lazy">
+
+                </figure>
+
+                <h3 class="project-title">Scecret Keeper</h3>
+
+                <p class="project-category">Web development</p>
 
               </a>
             </li>
@@ -800,49 +995,28 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                  <img src="./assets/images/portfolioimg.jpg" alt="arrival" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Summary</h3>
+                <h3 class="project-title">Portfolio</h3>
 
                 <p class="project-category">Web development</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="nothing">
+              <a href="https://github.com/saransathish">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                  <img src="./assets/images/githubprojects.webp" alt="arrival" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
+                <h3 class="project-title">Show More Projects on GitHub</h3>
               </a>
             </li>
 
@@ -1071,22 +1245,22 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <!-- <form  class="form" data-form> -->
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" id="contactName" required data-form-input >
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" id="contactEmail" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" class="form-input" placeholder="Your Message" id="contactMsg" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button class="form-btn"6  onclick="sendMail()"  data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
 
-          </form>
+          <!-- </form> -->
 
         </section>
 

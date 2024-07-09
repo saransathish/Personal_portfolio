@@ -1,5 +1,30 @@
 'use strict';
 
+function sendMail() {
+  var params = {
+    name: document.getElementById("contactName").value,
+    email: document.getElementById("contactEmail").value,
+    message: document.getElementById("contactMsg").value,
+  };
+  document.getElementById("contactName").value = ''
+  document.getElementById("contactEmail").value = ''
+  document.getElementById("contactMsg").value = ''
+
+  const serviceID = "service_snkdgdg";
+  const templateID = "template_4glmu24";
+
+    emailjs.send(serviceID, templateID, params)
+    .then(res=>{
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your message sent successfully!!")
+
+    })
+    .catch(err=>console.log(err));
+
+}
 
 
 // element toggle function
@@ -157,3 +182,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
