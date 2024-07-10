@@ -1225,6 +1225,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
+
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
@@ -1794,6 +1795,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar, article { width: auto; }
 
+  
+
+  #ok {
+    display: none;
+    
+  }
+
   article { min-height: 100%; }
 
 
@@ -1879,4 +1887,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+@media (max-width: 1250px) {
+
+#notok {
+  display: none;
+} 
 }

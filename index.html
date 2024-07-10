@@ -42,7 +42,180 @@
 
   <main>
 
-    
+    <aside class="sidebar" id="ok" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">SARAN V </h1>
+
+          <!-- <p class="title">Web developer</p> -->
+
+
+          <!-- Element to contain animated typing -->
+						<span class="title" id="typing-animation"></span>
+
+						<script>
+                // Initialize the typing animation
+                const typingAnimationElement = document.getElementById('typing-animation');
+
+                // Create an array of typing text
+
+                const typingTexts = [
+                ' ',
+                'Devops Engineer  ',
+                'Software Developer  ',
+                'Data Scientist ',
+
+                ];
+
+                function playTypingAnimation(text) {
+                for (let i = 0; i < text.length; i++) {
+                  setTimeout(() => {
+                  typingAnimationElement.textContent += text[i];
+                  }, i * 200); 
+                }
+
+                setTimeout(() => {
+                  typingAnimationElement.textContent = '';
+                  playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                }, text.length * 200);
+                }
+
+                // Start the typing animation loop
+                playTypingAnimation(typingTexts[0]);
+
+
+                            
+						</script>
+
+
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:saransathi1010@gmail.com" class="contact-link">saransathi1010@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91 8072089541" class="contact-link">+91 8072089541</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2004-03-26">Mar 26, 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Coimbatore, Tamil Nadu, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <!-- <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li> -->
+
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/saran01/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/saransathish" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://leetcode.com/saransathish001/" class="social-link">
+              <ion-icon name="code-slash-outline"></ion-icon>
+              <!-- <ion-icon name="medal-outline"></ion-icon> -->
+            </a>
+          </li>
+          
+        </ul>
+
+      </div>
+
+    </aside>
+
 
 
 
@@ -742,7 +915,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/proj_2.webp" alt="orizon" loading="lazy">
+                  <img src="./assets/images/testeditpro.jpg" alt="orizon" loading="lazy">
 
                 </figure>
 
@@ -825,17 +998,17 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+              <a href="https://github.com/saransathish/Todo_Mobile_Applications">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/taskman1.png" alt="brawlhalla" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Brawlhalla</h3>
+                <h3 class="project-title">Agenda Application</h3>
 
                 <p class="project-category">Applications</p>
 
@@ -988,7 +1161,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a href="https://saransathish.github.io/Personal_portfolio/">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1274,7 +1447,7 @@
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+    <aside class="sidebar"  id="notok" data-sidebar>
 
       <div class="sidebar-info">
 
@@ -1289,40 +1462,40 @@
 
 
           <!-- Element to contain animated typing -->
-						<span class="title" id="typing-animation"></span>
+						<span class="title" id="typing-animations"></span>
 
-						<script>
+            <script>
+              // Initialize the typing animation
+            const typingAnimationElements = document.getElementById('typing-animations');
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+            // Create an array of typing text
 
-						// Create an array of typing text
+            // const typingTexts = [
+            //   'ML Engineer',
+            // 'Software Developer  ',
+            // 'Data Scientist ',
 
-						const typingTexts = [
-						' ',
-						'Devops Engineer  ',
-						'Software Developer  ',
-            'Data Scientist ',
+            // ];
+
+            function playTypingAnimation1(text) {
+            for (let i = 0; i < text.length; i++) {
+              setTimeout(() => {
+                typingAnimationElements.textContent += text[i];
+              }, i * 200); 
+            }
+
+            setTimeout(() => {
+              typingAnimationElements.textContent = '';
+              playTypingAnimation1(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+            }, text.length * 200);
+            }
+
+            // Start the typing animation loop
+            playTypingAnimation1(typingTexts[0]);
+
+</script>
             
-						];
 
-						function playTypingAnimation(text) {
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); 
-						}
-
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
 
 
         </div>
